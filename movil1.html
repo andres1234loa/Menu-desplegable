@@ -1,0 +1,327 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+        *{
+            box-sizing: border-box;
+        }
+		body{
+			margin: 0;
+			padding: 0;
+		}
+        div .img{
+            display: none;
+        }
+		div{
+			
+			margin: 10px;	
+			display: flex;
+			justify-content: center;
+			
+		}	
+		div ul
+		{
+			border-radius: 10px;
+			background-color: #84a9ac;
+			width: 70%;
+			padding: 0;		
+			margin: 0;
+			display: flex;
+			justify-content: space-between;
+
+			
+		}
+		div ul li
+		{
+			color: white;
+			padding: 15px 30px;
+			list-style-type: no
+			
+			ne;
+			display: inline-block;
+			transition: 450ms all ;
+		}
+		div ul li:hover{
+			background-color: #3b6978;
+			color: black;
+			
+        }
+        .parrafo
+        {
+            display: block;
+            
+        }
+        .parrafo>p
+        {
+            width: 100%;
+            
+        }
+		/* de 800 hacia abajo va tener el mismo estilo y 800 hacia arriba tiene los estilos especificado en la parte de arriba */
+		@media only screen and (max-width:800px)
+        {   
+            div .img
+            {
+                display: block;
+                width: 95%;
+                height: 60px;
+                text-align: right;
+                margin: 0;
+            } 
+            .principal
+            {
+				margin: 0;
+                
+                display: block;
+                background-color: #204051;
+            }
+			div ul
+			{
+                height: 25%;
+                width: 100%;
+				border-radius: none;
+				background-color: #204051;
+				border-radius: 0;
+				display: flex;
+                flex-direction: column;
+				align-items:  center;
+				
+			}		
+			div ul li{
+				
+			color: white;
+			padding: 15px 0px;
+			list-style-type: none;
+			display: inline-block;
+			
+            }
+            .parrafo>p
+            {
+                /* no es necesario colocar el ancho del 100% */
+                width: 100%;
+                text-align: justify;
+
+                
+            
+            }
+		}
+        
+		
+		
+
+    </style>
+       <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+       <script src="js/jquery.js"></script>
+       <script>
+       $(document).ready(function()
+        {
+            $(window).resize(function() 
+            {
+                cambio();
+             });
+             cambio();
+             function cambio()
+             {
+                if($(window).width() < 800)
+                {
+                    var contador=1
+                        $("div ul").hide();
+                        $("div .img_im").click(function()
+                        {
+                            if(contador==1)
+                            {
+                                $("div ul").show();
+                                contador=0;
+                            }
+                            else{
+                                $("div ul").hide();
+                                contador=1;
+                            }
+                        })
+                }
+                else 
+                {
+                    $("div ul").show();
+
+                }
+            }
+            
+        })   
+                
+           
+    </script>
+</head>
+<body>
+	<div class="principal">
+        <div class="img">
+            <img class="img_im" src="https://img.icons8.com/fluent/48/000000/menu--v1.png"/>
+        </div>
+		<ul>
+			<li>incio </li>
+			<li>producto</li>
+			<li>compra</li>
+			<li>venta</li>
+			<li>crar</li>
+		</ul>
+	</div>
+	
+<div class="parrafo">
+    <!-- para que se muestre los parrafos de forma correcta sin que 
+        se pase de la ventana grafica se ddeben colocar parrafor con 
+        sentido y no colocar dkfndkfndkfdhfdfjdhfkd ya que no funcion de 
+        esa forma -->
+	<p>
+		Este es un tema que nacio en el orfanato
+        y que hizo creer a un incredulo corazon
+        Que penso que luego de aver sido lastimado
+        Nunca volveria a amar
+        Hoy por ti le doy gracias al tiempo... Un beso (El rey)
+        Este es un tema que nacio en el orfanato
+        y que hizo creer a un incredulo corazon
+        Que penso que luego de aver sido lastimado
+        Nunca volveria a amar
+        Hoy por ti le doy gracias al tiempo... Un beso (El rey)
+        Este es un tema que nacio en el orfanato
+        y que hizo creer a un incredulo corazon
+        Que penso que luego de aver sido lastimado
+        Nunca volveria a amar
+        Hoy por ti le doy gracias al tiempo... Un beso (El rey)
+        Este es un tema que nacio en el orfanato
+        y que hizo creer a un incredulo corazon
+        Que penso que luego de aver sido lastimado
+        Nunca volveria a amar
+        Hoy por ti le doy gracias al tiempo... Un beso (El rey)
+	</p>
+	<p>
+        Este es un tema que nacio en el orfanato
+        y que hizo creer a un incredulo corazon
+        Que penso que luego de aver sido lastimado
+        Nunca volveria a amar
+        Hoy por ti le doy gracias al tiempo... Un beso (El rey)
+        Este es un tema que nacio en el orfanato
+        y que hizo creer a un incredulo corazon
+        Que penso que luego de aver sido lastimado
+        Nunca volveria a amar
+		Este es un tema que nacio en el orfanato
+        y que hizo creer a un incredulo corazon
+        Que penso que luego de aver sido lastimado
+        Nunca volveria a amar
+        Hoy por ti le doy gracias al tiempo... Un beso (El rey)
+        Este es un tema que nacio en el orfanato
+        y que hizo creer a un incredulo corazon
+        Que penso que luego de aver sido lastimado
+        Nunca volveria a amar
+        Hoy por ti le doy gracias al tiempo... Un beso (El rey)
+        Este es un tema que nacio en el orfanato
+        y que hizo creer a un incredulo corazon
+        Que penso que luego de aver sido lastimado
+        Nunca volveria a amar
+        Hoy por ti le doy gracias al tiempo... Un beso (El rey)
+        Este es un tema que nacio en el orfanato
+        y que hizo creer a un incredulo corazon
+        Que penso que luego de aver sido lastimado
+        Nunca volveria a amar
+        Hoy por ti le doy gracias al tiempo... Un beso (El rey)
+
+	</p>
+	<p>
+		Este es un tema que nacio en el orfanato
+        y que hizo creer a un incredulo corazon
+        Que penso que luego de aver sido lastimado
+        Nunca volveria a amar
+        Hoy por ti le doy gracias al tiempo... Un beso (El rey)
+        Este es un tema que nacio en el orfanato
+        y que hizo creer a un incredulo corazon
+        Que penso que luego de aver sido lastimado
+        Nunca volveria a amar
+		Este es un tema que nacio en el orfanato
+        y que hizo creer a un incredulo corazon
+        Que penso que luego de aver sido lastimado
+        Nunca volveria a amar
+        Hoy por ti le doy gracias al tiempo... Un beso (El rey)
+        Este es un tema que nacio en el orfanato
+        y que hizo creer a un incredulo corazon
+        Que penso que luego de aver sido lastimado
+        Nunca volveria a amar
+        Hoy por ti le doy gracias al tiempo... Un beso (El rey)
+        Este es un tema que nacio en el orfanato
+        y que hizo creer a un incredulo corazon
+        Que penso que luego de aver sido lastimado
+        Nunca volveria a amar
+        Hoy por ti le doy gracias al tiempo... Un beso (El rey)
+        Este es un tema que nacio en el orfanato
+        y que hizo creer a un incredulo corazon
+        Que penso que luego de aver sido lastimado
+        Nunca volveria a amar
+        Hoy por ti le doy gracias al tiempo... Un beso (El rey)
+
+	</p>
+	<p>
+		Este es un tema que nacio en el orfanato
+        y que hizo creer a un incredulo corazon
+        Que penso que luego de aver sido lastimado
+        Nunca volveria a amar
+        Hoy por ti le doy gracias al tiempo... Un beso (El rey)
+        Este es un tema que nacio en el orfanato
+        y que hizo creer a un incredulo corazon
+        Que penso que luego de aver sido lastimado
+        Nunca volveria a amar
+		Este es un tema que nacio en el orfanato
+        y que hizo creer a un incredulo corazon
+        Que penso que luego de aver sido lastimado
+        Nunca volveria a amar
+        Hoy por ti le doy gracias al tiempo... Un beso (El rey)
+        Este es un tema que nacio en el orfanato
+        y que hizo creer a un incredulo corazon
+        Que penso que luego de aver sido lastimado
+        Nunca volveria a amar
+        Hoy por ti le doy gracias al tiempo... Un beso (El rey)
+        Este es un tema que nacio en el orfanato
+        y que hizo creer a un incredulo corazon
+        Que penso que luego de aver sido lastimado
+        Nunca volveria a amar
+        Hoy por ti le doy gracias al tiempo... Un beso (El rey)
+        Este es un tema que nacio en el orfanato
+        y que hizo creer a un incredulo corazon
+        Que penso que luego de aver sido lastimado
+        Nunca volveria a amar
+        Hoy por ti le doy gracias al tiempo... Un beso (El rey)
+
+	</p>
+	<p>
+		Este es un tema que nacio en el orfanato
+        y que hizo creer a un incredulo corazon
+        Que penso que luego de aver sido lastimado
+        Nunca volveria a amar
+        Hoy por ti le doy gracias al tiempo... Un beso (El rey)
+        Este es un tema que nacio en el orfanato
+        y que hizo creer a un incredulo corazon
+        Que penso que luego de aver sido lastimado
+        Nunca volveria a amar
+		Este es un tema que nacio en el orfanato
+        y que hizo creer a un incredulo corazon
+        Que penso que luego de aver sido lastimado
+        Nunca volveria a amar
+        Hoy por ti le doy gracias al tiempo... Un beso (El rey)
+        Este es un tema que nacio en el orfanato
+        y que hizo creer a un incredulo corazon
+        Que penso que luego de aver sido lastimado
+        Nunca volveria a amar
+        Hoy por ti le doy gracias al tiempo... Un beso (El rey)
+        Este es un tema que nacio en el orfanato
+        y que hizo creer a un incredulo corazon
+        Que penso que luego de aver sido lastimado
+        Nunca volveria a amar
+        Hoy por ti le doy gracias al tiempo... Un beso (El rey)
+        Este es un tema que nacio en el orfanato
+        y que hizo creer a un incredulo corazon
+        Que penso que luego de aver sido lastimado
+        Nunca volveria a amar
+        Hoy por ti le doy gracias al tiempo... Un beso (El rey)
+
+	</p>
+</div>	
+</body>
+</html>
