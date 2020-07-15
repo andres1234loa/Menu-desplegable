@@ -11,8 +11,6 @@
 		body{
 			margin: 0;
 			padding: 0;
-            background-color: gray;
-            color: white;
 		}
         div .img{
             display: none;
@@ -114,46 +112,7 @@
 		
 
     </style>
-       <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
-        </script>
-       <script>
-       $(document).ready(function()
-        {
-            $(window).resize(function() 
-            {
-                cambio();
-             });
-             cambio();
-             function cambio()
-             {
-                if($(window).width() < 800)
-                {
-                    var contador=1
-                        $("div ul").hide();
-                        $("div .img_im").click(function()
-                        {
-                            if(contador==1)
-                            {
-                                $("div ul").show();
-                                contador=0;
-                            }
-                            else{
-                                $("div ul").hide();
-                                contador=1;
-                            }
-                        })
-                }
-                else 
-                {
-                    $("div ul").show();
-
-                }
-            }
-            
-        })   
-                
-           
-    </script>
+       
 </head>
 <body>
 	<div class="principal">
@@ -325,5 +284,46 @@
 
 	</p>
 </div>	
+<script>
+    
+         window.addEventListener("resize",function() 
+         {
+            llamar()
+            
+         });
+          llamar()
+         function llamar()
+         {
+            let contador=1;
+            if(outerWidth <=816)
+            {
+                var lista=document.querySelector("div ul"); 
+                lista.style.display="none";
+                var anch=document.querySelector(".img img");
+                anch.addEventListener("click",function(){
+                    if(contador==1)
+                    {
+                        lista.style.display="flex";
+                        contador=0;
+                    }
+                    else
+                    {
+                        lista.style.display="none"
+                        contador=1;
+                    }
+
+                })
+                    // console.log(anch)
+                
+                
+                
+            }
+         }
+         
+         
+     
+             
+        
+ </script>
 </body>
 </html>
